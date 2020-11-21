@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'pokemon_solidnormal'; 
+    src: url('pokemon_solid-webfont.woff2') format('woff2'),
+         url('pokemon_solid-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.float-left {
+    float: right;
+}
+
+.header {
+    background-color: #CC0000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header h1 {
+    padding: 0px;
+    display: inline-block;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #3b4cca;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100px;
+    width: 100%;
+    letter-spacing: 10px;
+    color: yellow;
+}
+
+.header .navbar {
+    width: 25%;
+    color: yellow;
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    text-align: right;
+}
+
+.header .navbar ul li {
+    padding-top: 20px;
+}
+
+body{
+    font-family: 'pokemon_solidnormal';
+    background-color: #e7e7e6;
+}
+
+
+a {
+    text-decoration: none;
+    color: yellow;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #3b4cca;
+    letter-spacing: 5px;
+
+}
+
+a:hover{
+    color: #707ddd;
+}
+
+.search-bar {
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+#search-input {
+    width: 20%;
+    height: 33px;
+    text-align: center;
+}
