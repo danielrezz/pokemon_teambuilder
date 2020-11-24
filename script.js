@@ -8,3 +8,11 @@ function pokemonLog(event) {
     console.log(pokemonInput.value);
 }
 
+function searchPokemon() {
+    var movie = $(this).attr.
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function(response) {
+}
+
