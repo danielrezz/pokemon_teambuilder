@@ -1,17 +1,18 @@
+<!DOCTYPE html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="reset.css" />
-	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+	<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
 	<title>Pokémon Team Builder</title>
-	
 </head>
 
 <body>
-<header class = "header">
+<header id="header">
 	<h1>
 		Pokémon Team Builder
 	</h1>
-	<nav class="navbar">
+	<nav id="navbar">
 		<ul>
 			<li><a href="#">Pokémon by Type</a></li>
 			<li><a href="#">PokéTV</a></li>
@@ -21,16 +22,61 @@
 </header>
 
 
-<form class="search-bar">
-	<input type="text" id="search-input" placeholder="Pokémon Name">
+<form id="search-bar" class="pb-6 pt-6 pl-6">
+	<input type="text" id="search-input" placeholder="Search for a Pokémon">
 	<input id="search-button" type="submit" value="&#x1F50D">
 </form>
 
 
 
+
+
+<div class="columns pl-6 pr-6">
+	<div class="column is-half">
+		<div class="columns">
+			<div class="column">
+				<div id="pokemon-sprite" class="is-flex is-justify-content-center"><img src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/012-gmax.png?raw=true" 
+					style="width: 192px; height: 192px;"></div>
+				<div id="pokedex-name" class="is-flex is-justify-content-center">BUTTERFREE</div>
+			</div>
+			<div class="column">
+				<div id="pokemon-info" class="is-flex is-justify-content-center">POKÉDEX</div>
+			</div>
+		</div>
+		<div id="strong-against" class=>STRONG AGAINST:</div>
+		<div id="weak-against">WEAK AGAINST:</div>
+		<br />
+		<div class="columns">
+			<div class="column">
+				<div id="pokemon-fact">In battle, it flaps its wings at high speed to release highly toxic dust into the air.</div>
+			</div>
+			<div class="column is-one-quarter is-flex is-justify-content-center is-align-items-center">
+				<button id="add-to-team" class="button is-rounded">Add To <br />Team</div>
+			</div>
+		</div>
+
+
+	<div class="column is-half">
+		<div id="team-pokemon" class="has-background-white">
+			<img src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/012-gmax.png?raw=true" class="mt-5 ml-4">
+		</div>
+		<div id="team-pokemon"><img src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/012-gmax.png?raw=true" class="mt-5 ml-4"></div>
+		<div id="team-pokemon"><img src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/012-gmax.png?raw=true" class="mt-5 ml-4"></div>
+		<div id="team-pokemon"><img src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/012-gmax.png?raw=true" class="mt-5 ml-4"></div>
+		<div id="team-pokemon"><img src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/012-gmax.png?raw=true" class="mt-5 ml-4"></div>
+		<div id="team-pokemon"><img src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/012-gmax.png?raw=true" class="mt-5 ml-4"></div>
+	</div>
+</div>
+</div>
+
+
+<footer class="is-size-1">FOOTER TEST</footer>
+
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </html>
 
 
