@@ -23,7 +23,7 @@
 
 
 <form id="search-bar" class="pb-6 pt-6 pl-6">
-	<input type="text" id="search-input" placeholder="Search for a Pokémon">
+	<input type="text" id="search-input" placeholder="Search for a Pokémon" class="input is-warning">
 	<input id="search-button" type="submit" value="&#x1F50D">
 </form>
 
@@ -37,12 +37,17 @@
 	<div class="column is-half">
 		<div class="columns">
 			<div class="column">
-				<div id="pokemon-sprite" class="is-flex is-justify-content-center"><img id="pokemon-sprite-img" src="./image.png" 
+				<div id="pokemon-sprite" class="is-flex is-justify-content-center"><img id="pokemon-sprite-img" src="./pokeball.png" 
 					style="width: 192px; height: 192px;"></div>
 				<div id="pokedex-name" class="is-flex is-justify-content-center"></div>
 			</div>
 			<div class="column">
-				<div id="pokemon-info" class="is-flex is-justify-content-center">POKÉDEX</div>
+				<div id="pokemon-info" class="is-flex-direction-column">
+					<span id="pokemon-type"></span>
+					<br />
+					<p id="pokemon-species"></p>
+					<p id="pokemon-abilities"></p>
+				</div>
 			</div>
 		</div>
 		<div id="strong-against" class=>STRONG AGAINST:</div>
@@ -50,23 +55,23 @@
 		<br />
 		<div class="columns">
 			<div class="column">
-				<div id="pokemon-fact">In battle, it flaps its wings at high speed to release highly toxic dust into the air.</div>
+				<div id="pokemon-fact"></div>
 			</div>
 			<div class="column is-one-quarter is-flex is-justify-content-center is-align-items-center">
-				<button id="add-to-team" class="button is-rounded">Add To <br />Team</div>
+				<button id="add-to-team" class="button is-rounded is-active">Add To <br />Team</div>
 			</div>
 		</div>
 
 
 	<div class="column is-half">
 		<div id="team-pokemon" class="has-background-white">
-			<img src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/012-gmax.png?raw=true" class="mt-5 ml-4">
+			<img src="./pokeball.png" class="mt-5 ml-4" style="width: 96px; height: 96px;">
 		</div>
-		<div id="team-pokemon"><img src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/012-gmax.png?raw=true" class="mt-5 ml-4"></div>
-		<div id="team-pokemon"><img src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/012-gmax.png?raw=true" class="mt-5 ml-4"></div>
-		<div id="team-pokemon"><img src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/012-gmax.png?raw=true" class="mt-5 ml-4"></div>
-		<div id="team-pokemon"><img src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/012-gmax.png?raw=true" class="mt-5 ml-4"></div>
-		<div id="team-pokemon"><img src="https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/012-gmax.png?raw=true" class="mt-5 ml-4"></div>
+		<div id="team-pokemon"><img src="./pokeball.png" class="mt-5 ml-4" style="width: 96px; height: 96px;"></div>
+		<div id="team-pokemon"><img src="./pokeball.png" class="mt-5 ml-4" style="width: 96px; height: 96px;"></div>
+		<div id="team-pokemon"><img src="./pokeball.png" class="mt-5 ml-4" style="width: 96px; height: 96px;"></div>
+		<div id="team-pokemon"><img src="./pokeball.png" class="mt-5 ml-4" style="width: 96px; height: 96px;"></div>
+		<div id="team-pokemon"><img src="./pokeball.png" class="mt-5 ml-4" style="width: 96px; height: 96px;"></div>
 	</div>
 </div>
 </div>
