@@ -31,19 +31,23 @@ function searchPokemon() {
             $("#pokemon-sprite-img").attr("src", spriteLink);
 
             var pokemonType = response.types[0].type.name;
-            var pokemonType2 = response.types[1].type.name;
+        
 
             if (response.types.length === 2) {
-
-                $("#pokemon-type").text("Type: " + pokemonType.charAt(0).toUpperCase() + pokemonType.slice(1) + ", " + pokemonType2.charAt(0).toUpperCase() + pokemonType2.slice(1));
+                var pokemonType2 = response.types[1].type.name;
+                $("#pokemon-type").text("TYPE: " + pokemonType.charAt(0).toUpperCase() + pokemonType.slice(1) + ", " + pokemonType2.charAt(0).toUpperCase() + pokemonType2.slice(1));
             } else {
-                $("#pokemon-type").text("Type: " + pokemonType.charAt(0).toUpperCase() + pokemonType.slice(1));
+                $("#pokemon-type").text("TYPE: " + pokemonType.charAt(0).toUpperCase() + pokemonType.slice(1));
             };
         
             var ability1 = response.abilities[0].ability.name;
             var ability2 = response.abilities[1].ability.name;
-            $("#pokemon-abilities").text("Abilities: " + ability1 + ", " + ability2);
+            $("#pokemon-abilities").text("ABILITIES: " + ability1.charAt(0).toUpperCase() + ability1.slice(1) + ", " + ability2.charAt(0).toUpperCase() + ability2.slice(1));
 
+            var pokemonHeight = response.height/10;
+            var pokemonWeight = response.weight/10;
+            $("#pokemon-height").text("HEIGHT: " + pokemonHeight + " m");
+            $("#pokemon-weight").text("WEIGHT: " + pokemonWeight + " kg");
         });
 
         $.ajax({
@@ -59,7 +63,7 @@ function searchPokemon() {
 
             // $("#pokemon-type").css("background-color", response.color.name);
 
-            $("#pokemon-species").text("Species: " + pokemonSpecies);
+            $("#pokemon-species").text("SPECIES: " + pokemonSpecies);
 
         });
     };
