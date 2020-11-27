@@ -33,10 +33,10 @@ function searchPokemon() {
             var pokemonType = response.types[0].type.name;
             var pokemonType2 = response.types[1].type.name;
 
-            if (pokemonType2) {
+            if (response.types.length === 2) {
 
                 $("#pokemon-type").text("Type: " + pokemonType.charAt(0).toUpperCase() + pokemonType.slice(1) + ", " + pokemonType2.charAt(0).toUpperCase() + pokemonType2.slice(1));
-            } else if (pokemonType) {
+            } else {
                 $("#pokemon-type").text("Type: " + pokemonType.charAt(0).toUpperCase() + pokemonType.slice(1));
             };
         
