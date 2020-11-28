@@ -81,6 +81,12 @@ a:hover{
     color: #707ddd;
 }
 
+button {
+    font-family: 'pokemon_solidnormal';
+    color: yellow;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #3b4cca;
+}
 
 #search-input {
     width: 20%;
