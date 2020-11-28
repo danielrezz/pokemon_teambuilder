@@ -2,9 +2,12 @@ $( document ).ready(function() {
 var pokemonInput = document.querySelector("#search-input");
 var searchButton = document.querySelector("#search-button");
 var querySearch = document.querySelector("#search-bar");
+var addToTeamBtn = document.querySelector("#add-to-team")
 var renderTypes = [];
+let teamSlotId = 1;
 
 querySearch.addEventListener("submit", pokemonLog);
+addToTeamBtn.addEventListener("click", addToTeam);
 
 function pokemonLog(event) {
     event.preventDefault();
@@ -67,6 +70,16 @@ function searchPokemon() {
 
         });
     };
+    function addToTeam(){
+        var pokeSprite = document.querySelector("#pokemon-sprite-img").getAttribute("src")
+        var pokeName = document.querySelector("#pokedex-name").textContent 
+        var pokeType = document.querySelector("#pokemon-type").textContent.slice(5)
+        var teamSlot = document.querySelector("#team-pokemon" + teamSlotId)
+        teamSlot
+        
+        console.log(pokeSprite, pokeType, pokeName)
+    }
+
 
     // function renderType() {
 
