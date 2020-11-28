@@ -57,7 +57,7 @@ body{
     font-family: 'pokemon_solidnormal';
     background-color: #e7e7e6;
     margin-right: 0px;
-    line-height: 3rem;2
+    line-height: 3rem;
 }
 
 div{
@@ -84,7 +84,7 @@ a:hover{
 
 #search-input {
     width: 20%;
-    height: 33px;
+    height: 41px;
     text-align: center;
 }
 
