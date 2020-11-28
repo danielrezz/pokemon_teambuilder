@@ -25,7 +25,6 @@ html, body
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
 }
 
 #header h1 {
@@ -94,6 +93,111 @@ a:hover{
     height: 93px;
     background-color: #CC0000;
     color: yellow;
+}
+
+#dropdown-links {
+    display: none;
+    overflow: hidden;
+}
+
+#dropdown-links a {
+    display: block;
+    font-size: 1.5rem;
+}
+
+#dropbtn {
+    width: 4rem;
+    height: 4rem;
+    background-color: #c84848;
+
+}
+
+#dropbtn:hover{
+    background-color: #CC0000;
+}
+
+
+#dropdown:hover #dropdown-links {
+    display: block;
+}
+
+.dropdown-content {
+    width: 20rem;
+    border: 1px solid #3b4cca
+}
+
+
+@media screen and (min-width:1619px) {
+    #dropdown {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:1619px){
+    #header h1 {
+        line-height: 8rem;
+        width: 6rem;
+        -webkit-text-stroke-width: .15rem;
+    }
+
+    #header #navbar ul {
+        display: none;
+    }
+
+    #dropbtn {
+        height: 20rem;
+        width: 20rem;
+        font-size: 15rem;
+    }
+
+}
+@media screen and (max-width: 768px){
+    #search-input {
+        width: 90%;
+    }
+
+    #search-bar {
+        padding-right: 3rem;
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    #header h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+        width: 6rem;
+        -webkit-text-stroke-width: .1rem;
+    }
+
+    #header #navbar h1 {
+        width: 100%;
+    }
+
+    #dropbtn {
+        height: 8rem;
+        width: 8rem;
+        font-size: 4rem;
+        
+    }
+
+}
+
+@media screen and (max-width: 436px){
+    #search-input {
+        width: 80%;
+    }
+
+    #header h1 {
+        font-size: 1.75rem;
+        line-height: 4rem;
+        width: 1rem;
+        -webkit-text-stroke-width: .1rem;
+        letter-spacing: .15rem;
+    }
 }
 
 
