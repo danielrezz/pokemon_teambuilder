@@ -14,16 +14,14 @@
 	</h1>
 	<nav id="navbar">
 		<ul>
-			<li><a href="#">Pokémon by Type</a></li>
 			<li><a href="https://watch.pokemon.com/en-us/" target="_blank">PokéTV</a></li>
 			<li><a href="./gifgenerator.html">GIF Generator</a></li>
 		</ul>
 	</nav>
-	<div id="dropdown" class="dropdown is-right">
+	<div id="dropdown" class="dropdown is-right mobile">
 		<button id="dropbtn" class="dropdown-trigger">≡</button>
 		<div class="dropdown-menu" id="dropdown-links">
 			<div class="dropdown-content">
-				<div class="dropdown-item has-text-right"><a href="#">Pokémon by Type</a></div>
 				<div class="dropdown-item has-text-right"><a href="https://watch.pokemon.com/en-us/" target="_blank">PokéTV</a></div>
 				<div class="dropdown-item has-text-right"><a href="./gifgenerator.html">GIF Generator</a></div>
 			</div>
@@ -32,7 +30,7 @@
 </header>
 
 
-<form id="search-bar" class="pb-6 pt-6 pl-6">
+<form id="search-bar" class="pb-6 pt-6 pl-6 pr-6 is-flex is-justify-content-center is-mobile">
 	<input type="text" id="search-input" placeholder="Search for a Pokémon" class="input is-medium is-warning">
 	<input id="search-button" type="submit" value="&#x1F50D" class="button is-danger is-outlined">
 </form>
@@ -40,50 +38,187 @@
 <div class="test"></div>
 
 
-
-
-
-<div class="columns pl-6 pr-6">
+<div class="columns pl-6 pr-6 mobile tablet">
 	<div class="column is-half">
 		<div class="columns">
 			<div class="column">
 				<div id="pokemon-sprite" class="is-flex is-justify-content-center"><img id="pokemon-sprite-img" src="./pokeball.png" 
-					style="width: 192px; height: 192px;"></div>
-				<div id="pokedex-name" class="is-flex is-justify-content-center"></div>
+					style="width: 300px; height: 300px;"></div>
+				<div id="pokedex-name" class="is-flex is-justify-content-center pb-6"></div>
 			</div>
 			<div class="column">
-				<div id="pokemon-info" class="is-flex-direction-column">
-					<p id="pokemon-type"></p>
-					<p id="pokemon-species"></p>
-					<p id="pokemon-abilities"></p>
-					<p id="pokemon-height"></p>
-					<p id="pokemon-weight"></p>
+				<div id="pokemon-info" class="is-flex-direction-column has-background-grey-lighter">
+					<p id="pokemon-type" class="pl-4" ></p>
+					<p id="pokemon-species" class="pl-4" ></p>
+					<p id="pokemon-abilities" class="pl-4" ></p>
+					<p id="pokemon-height" class="pl-4" ></p>
+					<p id="pokemon-weight" class="pl-4" ></p>
 				</div>
 			</div>
 		</div>
-		<div id="strong-against" class=>STRONG AGAINST:</div>
-		<div id="weak-against">WEAK AGAINST:</div>
+		<div class="columns is-8 pl-3 pr-3 is-mobile is-multiline is-centered" id="matchup-columns">
+			<div id="weak-against" style="display: none;" class="column has-background-grey-lighter mr-3">
+				<p class ="is-flex is-justify-content-center">
+					TAKES MORE DAMAGE FROM:
+				</p>
+				<ul>
+					<li id="weak-one" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-two" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-three" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-four" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-five" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-six" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-seven" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-eight" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-nine" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-ten" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-eleven" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-twelve" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-thirteen" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-fourteen" class="is-flex is-justify-content-center">
+					</li>
+					<li id="weak-fifteen" class="is-flex is-justify-content-center">
+					</li>
+				</ul>
+			</div>
+			<div id="strong-against" style="display: none;" class="column has-background-grey-lighter ml-3"> 
+				<p class="is-flex is-justify-content-center">
+					TAKES LESS DAMAGE FROM:
+				</p>
+				<ul>
+					<li id="strong-one" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-two" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-three" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-four" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-five" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-six" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-seven" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-eight" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-nine" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-ten" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-eleven" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-twelve" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-thirteen" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-fourteen" class="is-flex is-justify-content-center">
+					</li>
+					<li id="strong-fifteen" class="is-flex is-justify-content-center">
+					</li>
+				</ul>
+			</div>
+	</div>
 		<br />
 		<div class="columns">
-			<div class="column">
-				<div id="pokemon-fact"></div>
+			<div class="column is-flex is-justify-content-center">
+				<div id="pokemon-fact" class="is-flex is-justify-content-center pl-4"></div>
 			</div>
-			<div class="column is-one-quarter is-flex is-justify-content-center is-align-items-center">
-				<button id="add-to-team" class="button is-rounded is-active">Add To <br />Team</div>
+			<div class="column is-2 is-flex is-justify-content-center is-align-items-center pr-4 pb-6">
+				<button id="add-to-team" class="button is-rounded is-active" style="display: none;"><p>Add To <br />Team</div></p>
 			</div>
 		</div>
 
 
-	<div class="column is-half">
-		<div id="team-pokemon" class="has-background-white">
-			<img src="./pokeball.png" class="mt-5 ml-4" style="width: 96px; height: 96px;">
+	<div class="column is-half" id="total-team">
+		<h1>MY TEAM</h1>
+		<br>
+		<br>
+		<div id="team-pokemon1" class="columns has-background-grey-lighter is-vcentered is-flex is-justify-content-left">
+			<img id="poke-sprite1" src="./pokeball.png" class="img is-200x200 column mt-5 mb-5 ml-4 is-three-quarters" style="width: 100px; height: 100px;">
+			<div id="info" class="column is-multiline">
+				<p id="team-pokemon1-text" class="is-flex is-justify-content-left"></p>
+				<p id="team-pokemon1-text2" class="is-flex is-justify-content-left"></p>
+			</div>
+			<div class="column is-2 has-text-centered is-flex is-justify-content-center">
+				<button id="remove-from-team1" class="button is-rounded is-active" style="display:none;"><p>x</p></button>
+			</div>
 		</div>
-		<div id="team-pokemon"><img src="./pokeball.png" class="mt-5 ml-4" style="width: 96px; height: 96px;"></div>
-		<div id="team-pokemon"><img src="./pokeball.png" class="mt-5 ml-4" style="width: 96px; height: 96px;"></div>
-		<div id="team-pokemon"><img src="./pokeball.png" class="mt-5 ml-4" style="width: 96px; height: 96px;"></div>
-		<div id="team-pokemon"><img src="./pokeball.png" class="mt-5 ml-4" style="width: 96px; height: 96px;"></div>
-		<div id="team-pokemon"><img src="./pokeball.png" class="mt-5 ml-4" style="width: 96px; height: 96px;"></div>
-	</div>
+		<br>
+
+		<div id="team-pokemon2" class="columns has-background-grey-lighter is-vcentered is-flex is-justify-content-left">
+			<img id="poke-sprite2" src="./pokeball.png" class="img is-200x200 column mt-5 mb-5 ml-4 is-three-quarters" style="width: 100px; height: 100px;">
+			<div id="info" class="column is-multiline">
+				<p id="team-pokemon2-text" class="is-flex is-justify-content-left"></p>
+				<p id="team-pokemon2-text2" class="is-flex is-justify-content-left"></p>
+			</div>
+			<div class="column is-2 has-text-centered is-flex is-justify-content-center">
+				<button id="remove-from-team2" class="button is-rounded is-active" style="display:none;"><p>x</p></button>
+			</div>
+		</div>
+
+		<br>
+		<div id="team-pokemon3" class="columns has-background-grey-lighter is-vcentered is-flex is-justify-content-left">
+			<img id="poke-sprite3" src="./pokeball.png" class="img is-200x200 column mt-5 mb-5 ml-4 is-three-quarters" style="width: 100px; height: 100px;">
+			<div id="info" class="column is-multiline">
+				<p id="team-pokemon3-text" class="is-flex is-justify-content-left"></p>
+				<p id="team-pokemon3-text2" class="is-flex is-justify-content-left"></p>
+			</div>
+			<div class="column is-2 has-text-centered is-flex is-justify-content-center">
+				<button id="remove-from-team3" class="button is-rounded is-active" style="display:none;"><p>x</p></button>
+			</div>
+		</div>
+			
+		<br>
+		<div id="team-pokemon4" class="columns has-background-grey-lighter is-vcentered is-flex is-justify-content-left">
+			<img id="poke-sprite4" src="./pokeball.png" class="img is-200x200 column mt-5 mb-5 ml-4 is-three-quarters" style="width: 100px; height: 100px;">
+			<div id="info" class="column is-multiline">
+				<p id="team-pokemon4-text" class="is-flex is-justify-content-left"></p>
+				<p id="team-pokemon4-text2" class="is-flex is-justify-content-left"></p>
+			</div>
+			<div class="column is-2 has-text-centered is-flex is-justify-content-center">
+				<button id="remove-from-team4" class="button is-rounded is-active" style="display:none;"><p>x</p></button>
+			</div>
+		</div>
+			
+		<br>
+		<div id="team-pokemon5" class="columns has-background-grey-lighter is-vcentered is-flex is-justify-content-left">
+			<img id="poke-sprite5" src="./pokeball.png" class="img is-200x200 column mt-5 mb-5 ml-4 is-three-quarters" style="width: 100px; height: 100px;">
+			<div id="info" class="column is-multiline">
+				<p id="team-pokemon5-text" class="is-flex is-justify-content-left"></p>
+				<p id="team-pokemon5-text2" class="is-flex is-justify-content-left"></p>
+			</div>
+			<div class="column is-2 has-text-centered is-flex is-justify-content-center">
+				<button id="remove-from-team5" class="button is-rounded is-active" style="display:none;"><p>x</p></button>
+			</div>
+		</div>
+			
+		<br>
+		<div id="team-pokemon6" class="columns has-background-grey-lighter is-vcentered is-flex is-justify-content-left">
+			<img id="poke-sprite6" src="./pokeball.png" class="img is-200x200 column mt-5 mb-5 ml-4 is-three-quarters" style="width: 100px; height: 100px;">
+			<div id="info" class="column is-multiline">
+				<p id="team-pokemon6-text" class="is-flex is-justify-content-left"></p>
+				<p id="team-pokemon6-text2" class="is-flex is-justify-content-left"></p>
+			</div>
+			<div class="column is-2 has-text-centered is-flex is-justify-content-center">
+				<button id="remove-from-team6" class="button is-rounded is-active" style="display:none;"><p>x</p></button>
+			</div>
+		</div>
+			
+
 </div>
 </div>
 
