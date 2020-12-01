@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/buttonstyle.css" type="text/css"/>
+    <title>PokéGIF Generator</title>
+</head>
+<body style="line-height: 6rem;">
+
+    <header style="padding-top: 1rem; padding-bottom: 1rem; display: flex; text-align: center;">
+        <h1>Click the Pokéball to generate a random Pokémon GIF!</h1>
+    </header>  
+
+    <div class="button" id="button" style="padding-bottom: 8rem;">
+        <input type="image" id="pokeball" src="../assets/pokeball_color.png"/>
+    </div>
+
+    <div id="gif" style=" display:none;"> 
+        <img id="img" style="padding-top: 2rem; padding-bottom: 2rem;" /> 
+    </div>
+
+    <footer>
+         <a href="../index.html"><<< Pokemon Team Builder</a>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/buttonscript.js"></script>
+</body>
+</html>
