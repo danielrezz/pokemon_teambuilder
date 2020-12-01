@@ -2226,7 +2226,7 @@ function searchPokemon() {
 
             var pokemonSpecies = response.genera[7].genus;
 
-            $("#pokemon-fact").text(response.flavor_text_entries[0].flavor_text);
+            $("#pokemon-fact").text(response.flavor_text_entries[1].flavor_text);
 
             // $("#pokemon-type").css("background-color", response.color.name);
 
@@ -2243,7 +2243,7 @@ function addToTeam() {
     localStorage.setItem("sprite", pokeSprite);
     localStorage.setItem("pokeName", pokeName);
     localStorage.setItem("pokeType", pokeType);
-    localStorage.setItem("blank-img", "./pokeball.png")
+    localStorage.setItem("blank-img", "./assets/pokeball.png")
     
     var notDefault1 = document.getElementById("poke-sprite1").getAttribute("src");
     var notDefault2 = document.getElementById("poke-sprite2").getAttribute("src");
@@ -2252,42 +2252,42 @@ function addToTeam() {
     var notDefault5 = document.getElementById("poke-sprite5").getAttribute("src");
     var notDefault6 = document.getElementById("poke-sprite6").getAttribute("src");
 
-    if (notDefault1 === "./pokeball.png") {
+    if (notDefault1 === "./assets/pokeball.png") {
         document.getElementById("remove-from-team1").setAttribute("style", "display: block");
         document.getElementById("poke-sprite1").setAttribute("src", localStorage.getItem("sprite"));
         document.getElementById("team-pokemon1-text").innerHTML = `NAME: ` + localStorage.getItem("pokeName");
         document.getElementById("team-pokemon1-text2").innerHTML = `TYPE: `+ localStorage.getItem("pokeType");
     }
     
-    else if (notDefault2 === "./pokeball.png") {
+    else if (notDefault2 === "./assets/pokeball.png") {
         document.getElementById("remove-from-team2").setAttribute("style", "display: block");
         document.getElementById("poke-sprite2").setAttribute("src", localStorage.getItem("sprite"));
         document.getElementById("team-pokemon2-text").innerHTML = `NAME: ` + localStorage.getItem("pokeName");
         document.getElementById("team-pokemon2-text2").innerHTML = `TYPE: `+ localStorage.getItem("pokeType");
     }
 
-    else if (notDefault3 === "./pokeball.png") {
+    else if (notDefault3 === "./assets/pokeball.png") {
         document.getElementById("remove-from-team3").setAttribute("style", "display: block");
         document.getElementById("poke-sprite3").setAttribute("src", localStorage.getItem("sprite"));
         document.getElementById("team-pokemon3-text").innerHTML = `NAME: ` + localStorage.getItem("pokeName");
         document.getElementById("team-pokemon3-text2").innerHTML = `TYPE: `+ localStorage.getItem("pokeType");
     }
 
-    else if (notDefault4 === "./pokeball.png") {
+    else if (notDefault4 === "./assets/pokeball.png") {
         document.getElementById("remove-from-team4").setAttribute("style", "display: block");
         document.getElementById("poke-sprite4").setAttribute("src", localStorage.getItem("sprite"));
         document.getElementById("team-pokemon4-text").innerHTML = `NAME: ` + localStorage.getItem("pokeName");
         document.getElementById("team-pokemon4-text2").innerHTML = `TYPE: `+ localStorage.getItem("pokeType");
     }
 
-    else if (notDefault5 === "./pokeball.png") {
+    else if (notDefault5 === "./assets/pokeball.png") {
         document.getElementById("remove-from-team5").setAttribute("style", "display: block");
         document.getElementById("poke-sprite5").setAttribute("src", localStorage.getItem("sprite"));
         document.getElementById("team-pokemon5-text").innerHTML = `NAME: ` + localStorage.getItem("pokeName");
         document.getElementById("team-pokemon5-text2").innerHTML = `TYPE: `+ localStorage.getItem("pokeType");
     }
 
-    else if (notDefault6 === "./pokeball.png") {
+    else if (notDefault6 === "./assets/pokeball.png") {
         document.getElementById("remove-from-team6").setAttribute("style", "display: block");
         document.getElementById("poke-sprite6").setAttribute("src", localStorage.getItem("sprite"));
         document.getElementById("team-pokemon6-text").innerHTML = `NAME: ` + localStorage.getItem("pokeName");
@@ -2300,7 +2300,7 @@ function removeFromTeamOne() {
     localStorage.removeItem("sprite");
     localStorage.removeItem("pokeType");
     localStorage.removeItem("pokeName");
-    document.getElementById("poke-sprite1").setAttribute("src", "./pokeball.png");
+    document.getElementById("poke-sprite1").setAttribute("src", "./assets/pokeball.png");
     document.getElementById("team-pokemon1-text").innerHTML = ``;
     document.getElementById("team-pokemon1-text2").innerHTML = ``;
 };
@@ -2309,7 +2309,7 @@ function removeFromTeamTwo() {
     localStorage.removeItem("sprite");
     localStorage.removeItem("pokeType");
     localStorage.removeItem("pokeName");
-    document.getElementById("poke-sprite2").setAttribute("src", "./pokeball.png");
+    document.getElementById("poke-sprite2").setAttribute("src", "./assets/pokeball.png");
     document.getElementById("team-pokemon2-text").innerHTML = ``;
     document.getElementById("team-pokemon2-text2").innerHTML = ``;
 };
@@ -2318,7 +2318,7 @@ function removeFromTeamThree() {
     localStorage.removeItem("sprite");
     localStorage.removeItem("pokeType");
     localStorage.removeItem("pokeName");
-    document.getElementById("poke-sprite3").setAttribute("src", "./pokeball.png");
+    document.getElementById("poke-sprite3").setAttribute("src", "./assets/pokeball.png");
     document.getElementById("team-pokemon3-text").innerHTML = ``;
     document.getElementById("team-pokemon3-text2").innerHTML = ``;
 };
@@ -2327,7 +2327,7 @@ function removeFromTeamFour() {
     localStorage.removeItem("sprite");
     localStorage.removeItem("pokeType");
     localStorage.removeItem("pokeName");
-    document.getElementById("poke-sprite4").setAttribute("src", "./pokeball.png");
+    document.getElementById("poke-sprite4").setAttribute("src", "./assets/pokeball.png");
     document.getElementById("team-pokemon4-text").innerHTML = ``;
     document.getElementById("team-pokemon4-text2").innerHTML = ``;
 };
@@ -2336,7 +2336,7 @@ function removeFromTeamFive() {
     localStorage.removeItem("sprite");
     localStorage.removeItem("pokeType");
     localStorage.removeItem("pokeName");
-    document.getElementById("poke-sprite5").setAttribute("src", "./pokeball.png");
+    document.getElementById("poke-sprite5").setAttribute("src", "./assets/pokeball.png");
     document.getElementById("team-pokemon5-text").innerHTML = ``;
     document.getElementById("team-pokemon5-text2").innerHTML = ``;
 };
@@ -2345,7 +2345,7 @@ function removeFromTeamSix() {
     localStorage.removeItem("sprite");
     localStorage.removeItem("pokeType");
     localStorage.removeItem("pokeName");
-    document.getElementById("poke-sprite6").setAttribute("src", "./pokeball.png");
+    document.getElementById("poke-sprite6").setAttribute("src", "./assets/pokeball.png");
     document.getElementById("team-pokemon6-text").innerHTML = ``;
     document.getElementById("team-pokemon6-text2").innerHTML = ``;
 };
